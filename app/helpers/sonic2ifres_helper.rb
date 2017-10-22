@@ -1,0 +1,2 @@
+module Sonic2ifresHelper
+end

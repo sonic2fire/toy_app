@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sonic2ifres</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sonic2fire@gmail.com</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sonic2ifres.each do |sonic2ifre| %>
+      <tr>
+        <td><%= sonic2ifre.sonic2fire@gmail.com %></td>
+        <td><%= link_to 'Show', sonic2ifre %></td>
+        <td><%= link_to 'Edit', edit_sonic2ifre_path(sonic2ifre) %></td>
+        <td><%= link_to 'Destroy', sonic2ifre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sonic2ifre', new_sonic2ifre_path %>

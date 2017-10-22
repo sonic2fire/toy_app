@@ -1,0 +1,22 @@
+<%= form_with(model: sonic2ifre, local: true) do |form| %>
+  <% if sonic2ifre.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sonic2ifre.errors.count, "error") %> prohibited this sonic2ifre from being saved:</h2>
+
+      <ul>
+      <% sonic2ifre.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sonic2fire@gmail.com %>
+    <%= form.text_field :sonic2fire@gmail.com, id: :sonic2ifre_sonic2fire@gmail.com %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
